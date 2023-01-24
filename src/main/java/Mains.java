@@ -46,6 +46,10 @@ public class Mains {
 	                      System.out.println("2.Insert Authers Data");
 	                      System.out.println("3.Insert Sections Data");
 	                      System.out.println("4.top 5 sections with the most articles");
+	                      System.out.println("5.How many articles were written by each author");
+	                      System.out.println("6.What are the top 10 articles with the most views?");
+	                      System.out.println("7.How many articles were published each month in the year 2021?");
+	                      System.out.println("8.Which section had the most articles published on a particular day?");
 	                      System.out.println("####################");
 	                      String menu = sa.next();
 	                      int option = Integer.parseInt(menu);
@@ -61,10 +65,22 @@ public class Mains {
 		                           InsertSections.insert();
 		                  break;
 	                      case 4:
-	                    	       
+	                    	       SQLQueries.Top5Sections();  
 	                   	  break;
+	                      case 5:
+	                    	       SQLQueries.ArticlesNumbers(); 
+	                    	  break;
+	                      case 6:
+	                    	       SQLQueries.Top10Articles();
+	                    	  break;
+	                      case 7:
+	                    	       SQLQueries.PublishedDate();
+	                    	  break;
+	                      case 8:
+	                    	       SQLQueries.mostPublished();
+	                    	 
 
-		
+	                    	  
 	                    }
                         }
                          menuExit = false;

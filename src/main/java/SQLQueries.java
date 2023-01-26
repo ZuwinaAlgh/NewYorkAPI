@@ -38,7 +38,7 @@ public class SQLQueries {
 			        	System.out.println("Enter id: ");
 			            int idinput =sa.nextInt();
 			            int count=0;
-			            String sql = 
+			            String sql = "select top 5 section_name from sections INNER JOIN articles ON sections.id=articles.section_id";
 			            ResultSet rs=st.executeQuery(sql);
 			            
 				} catch (Exception ex) {

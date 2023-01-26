@@ -46,8 +46,8 @@ public class Mains {
 	                      System.out.println("2.Insert Authers Data");
 	                      System.out.println("3.Insert Sections Data");
 	                      System.out.println("4.top 5 sections with the most articles");
-	                      System.out.println("5.How many articles were written by each author");
-	                      System.out.println("6.What are the top 10 articles with the most views?");
+	                      System.out.println("5.What are the top 10 articles with the most views?");
+	                      System.out.println("6.How many articles were written by each author");
 	                      System.out.println("7.How many articles were published each month in the year 2021?");
 	                      System.out.println("8.Which section had the most articles published on a particular day?");
 	                      System.out.println("####################");
@@ -56,26 +56,32 @@ public class Mains {
 	                      switch (option) {
 	                      case 1:
 		                           InsertArticles.insert();
-		                  break;
-
+		                           break;
+		                  
 	                      case 2:
 		                           InsertAuthers.insert();
-		                  break;
+		                           break;
+		                           
 	                      case 3:
 		                           InsertSections.insert();
-		                  break;
+		                           break;
+		                           
 	                      case 4:
 	                    	       SQLQueries.Top5Sections();  
-	                   	  break;
+	                   	           break;
+	                   	           
 	                      case 5:
-	                    	       SQLQueries.ArticlesNumbers(); 
-	                    	  break;
-	                      case 6:
-	                    	       SQLQueries.Top10Articles();
-	                    	  break;
+	                    	      SQLQueries.Top10Articles();
+	                    	      break;
+	                    	      
+	                     case 6:
+	                    	      SQLQueries.ArticlesNumbers();
+	                    	      break;
+	                    	      
 	                      case 7:
 	                    	       SQLQueries.PublishedDate();
-	                    	  break;
+	                    	       break;
+	                    	       
 	                      case 8:
 	                    	       SQLQueries.mostPublished();
 	                    	 
